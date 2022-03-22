@@ -1,0 +1,44 @@
+.player{
+    .sub_visual{
+        background: url(../img/visual4.JPG) no-repeat  center/cover;
+    }
+
+    .inner {
+        
+        ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start ;
+
+            li{
+                display: block;
+                width: 280px;
+                height: 350px;
+                border: 1px solid violet;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                margin-right: 20px;
+
+                &:nth-of-type(4n){
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        
+    }
+}
+
+/* tablet */ 
+@media screen and (max-width:$tablet) {
+
+
+}
+
+
+/* mobile */ 
+@media screen and (max-width:$mobile) {
+
+}

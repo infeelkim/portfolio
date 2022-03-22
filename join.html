@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMBER JOIN</title>
+    <script src="https://kit.fontawesome.com/8e9a33dae2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="inner">
+            <h1><a href="index.html">eSports<sup>+</sup></a></h1>
+            <p class="slogan">SHORT SLOGAN <br/>GOES HERE</p>
+
+            <nav>
+                <ul id="gnb">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="media.html">MEDIA</a></li>
+                    <li><a href="player.html">PLAYER</a></li>                    
+                    <li><a href="livestreams.html">LIVESTREAMS</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
+ 
+            <nav class="menuMo">
+                <h1>
+                    <a href="#">eSports<sup>+</sup></a>
+                    <p class="slogan">SHORT SLOGAN <br/>GOES HERE</p>
+                </h1>
+ 
+                <ul id="gnbMo">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="media.html">MEDIA</a></li>
+                    <li><a href="player.html">PLAYER</a></li>                    
+                    <li><a href="livestreams.html">LIVESTREAMS</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="share">
+            <div class="wrap">
+                <p><i class="fa-brands fa-twitter"></i> THIS IS WHERE TWEETS GO TO SHOW <a href="#">@MENTIONS</a> AND OTHER <a href="#">#STUFF</a></p>
+                <ul class="sns">
+                    <li>FOLLOW US</li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="content join">
+        <div class="sub_visual"></div>
+        <div class="inner">
+            <h1>계정만들기</h1>
+            <!-- 컨텐츠가 들어갈 부분 -->
+            <a href="#" class="btn_back"><i class="fa-solid fa-angle-left"></i></a>
+            <form action="result.html">
+                <fieldset>
+                    <legend class="h">회원가입양식폼</legend>
+
+                    <h2><label for="terms">Terms & Policy</label></h2>
+                    <textarea name="terms" id="terms" cols="30" rows="10" spellcheck="false"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod numquam magnam unde eius impedit quisquam repellendus possimus magni suscipit voluptas soluta ex voluptate iste, aperiam quae in vitae, sapiente deserunt officia at vel. Maxime magnam non, nisi labore atque ipsum esse facilis consequuntur doloribus consectetur quod error natus, consequatur deserunt tenetur dolorem quidem eos, ipsam voluptatum earum incidunt illum. Similique rem a quod, suscipit beatae expedita sapiente nihil velit laboriosam voluptates modi ex hic minus id! Labore, tenetur? Maxime sint dolorum quasi architecto beatae, tenetur corrupti magnam nulla atque perferendis ea non, perspiciatis provident labore. Sequi aperiam enim tenetur fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestias veritatis, ipsam magni ullam, qui provident aliquid fuga voluptas reprehenderit sunt beatae at. Deleniti id iste repudiandae, dolores, quaerat aperiam facere sapiente officia voluptatum ipsam modi debitis vitae sit, hic dicta amet. Quo, dignissimos tempore alias qui, provident esse eius nobis cumque animi omnis modi nemo laboriosam minima ipsa, adipisci temporibus nesciunt error vero dolore asperiores nostrum. Accusamus praesentium nam quos dicta sunt, voluptatum eius, excepturi placeat rem recusandae reiciendis fuga aliquid aut explicabo assumenda nostrum veniam architecto eum, quidem voluptates non eveniet totam. Excepturi quas alias corporis necessitatibus impedit.
+                    </textarea>
+                    <div class="agreement">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">약관에 동의합니다</label>
+                    </div>
+
+                    <table>
+                        <caption class="h">회원정보 입력 양식 테이블</caption>
+                        <!-- 아이디 입력 -->
+                        <tr>
+                            <td>
+                                <input type="text" name="email" id="email" placeholder="이메일주소를 입력해 주세요">
+                            </td>
+                        </tr>
+                        <!-- password1 -->
+                        <tr>
+                            <td>
+                                <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력해 주세요" required>
+                            </td>
+                        </tr>
+                        <!-- password2  -->
+                        <tr>
+                            <td>
+                                <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력해 주세요" required>
+                            </td>
+                        </tr>
+                        <!-- education selecbox -->
+                        <tr>
+                            <td>
+                                <select name="game" id="game">
+                                    <option value="">좋아하는 게임장르를 선택해 주세요</option>
+                                    <option value="MMORPG">MMORPG</option>
+                                    <option value="AOS">AOS</option>
+                                    <option value="FPS">FPS</option>
+                                    <option value="ACADE">ACADE</option>
+                                    <option value="ADVENTURE">ADVENTURE</option>
+                                    <option value="PUZZLE">PUZZLE</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- hobby checkbox -->
+                        <tr>
+                            <td>
+                                <label for="game">
+                                    <input type="checkbox" name="hobby" id="game" value="game">GAME
+                                </label>
+                                <label for="music">
+                                    <input type="checkbox" name="hobby" id="music" value="music">MUSIC
+                                </label>
+                                <label for="reading">
+                                    <input type="checkbox" name="hobby" id="reading" value="reading">READING
+                                </label>
+                                <p class="hobbyTxt">취미를 하나 이상 선택해 주세요.</p>
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                            <td>
+                                <input type="submit" value="계정만들기">
+                            </td>                            
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="share">
+            <div class="wrap">
+                <p><i class="fa-brands fa-twitter"></i> THIS IS WHERE TWEETS GO TO SHOW <a href="#">@MENTIONS</a> AND OTHER <a href="#">#STUFF</a></p>
+                <ul class="sns">
+                    <li>FOLLOW US</li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            ESPORTS ㅣ ALL RIGHTS RESERVED
+        </div>
+    </footer>
+
+
+    
+  
+</body>
+</html>

@@ -1,0 +1,166 @@
+.player{
+    background: #1d1f20;
+    overflow: hidden;
+
+
+
+    .sub_visual{
+        background: url(../img/visual6.jpg) no-repeat  top/cover;
+        position: relative;
+        
+        &::before{
+            content:'';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0.8));
+        }
+        
+
+    }
+
+    .inner {
+        position: relative;
+        h1{
+            color: #fff!important;
+            font-size: 70px;
+            z-index: 2;
+        }
+        aside{
+            width: 100%;
+            height: 0;
+
+            img:first-child{
+                position: absolute;
+                top: 0px;
+                left: -75%;
+            }
+            img:last-child{
+                position: absolute;
+                top: 40px;
+                right: -45%;
+            }
+        }
+
+        ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start ;
+
+            li{
+                display: block;
+                width: 580px;
+                height: 250px;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                margin-right: 20px;
+                position: relative;
+                background: #000;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position:  center right;
+                overflow: hidden;
+
+                &::before{
+                    content:'';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: .66;
+                    background-color: #000;
+                }
+                
+                &.team_bg1{
+                    background-image: url(../img/t_logo_1.png);
+                }
+                &.team_bg2{
+                    background-image: url(../img/t_logo_2.png);
+                }
+
+
+                &:nth-of-type(2n){
+                    margin-right: 0px;
+                }
+
+                img{
+                    height: 110%;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 0;
+                }
+
+                .players{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 20px 30px;
+                    color: #fff;
+                    z-index: 1;
+                    background: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0.8));
+
+                    h2{
+                        font:500 16px/1 'Rubik';
+                        margin-bottom: 6px;    
+                        color: #8fa3b0;
+                    }
+
+                    .name {
+                        font:700 40px/1 'Rubik';
+                    }
+                }
+                
+            }
+        }
+
+        
+    }
+}
+
+/* tablet */ 
+@media screen and (max-width:$tablet) {
+    .player{
+
+        .inner {
+            position: relative;
+
+            aside{
+                display: none;
+            }
+
+            ul{
+                li{
+                    width: 49%;
+                    margin-right: 2%;
+                }
+            }
+        }
+    }
+}
+
+
+/* mobile */ 
+@media screen and (max-width:$mobile) {
+    .player{
+        .inner {
+            h1 {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+            ul{
+                li{
+                    width: 100%;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
