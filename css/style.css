@@ -776,6 +776,46 @@ a {
   background-position: center right;
   overflow: hidden;
 }
+.player .inner ul li .top {
+  width: 0%;
+  height: 1px;
+  background: lightgoldenrodyellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: none;
+}
+.player .inner ul li .right {
+  width: 1px;
+  height: 0%;
+  background: lightgoldenrodyellow;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  transition: none;
+}
+.player .inner ul li .bottom {
+  width: 0%;
+  height: 1px;
+  background: lightgoldenrodyellow;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  transition: none;
+}
+.player .inner ul li .left {
+  width: 1px;
+  height: 0%;
+  background: lightgoldenrodyellow;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  transition: none;
+}
 .player .inner ul li::before {
   content: "";
   display: block;

@@ -65,6 +65,40 @@
                 background-size: 100%;
                 background-position:  center right;
                 overflow: hidden;
+                
+
+                .top{
+                    width: 0%; height: 1px;
+                    background: lightgoldenrodyellow;
+                    position: absolute;
+                    top:0; left: 0;
+                    z-index: 2;
+                    transition: none;
+                }
+                .right{
+                    width: 1px; height: 0%;
+                    background: lightgoldenrodyellow;
+                    position: absolute;
+                    top:0; right: 0;
+                    z-index: 2;
+                    transition: none;
+                }
+                .bottom{
+                    width: 0%; height: 1px;
+                    background: lightgoldenrodyellow;
+                    position: absolute;
+                    bottom:0; right: 0;
+                    z-index: 2;
+                    transition: none;
+                }
+                .left{
+                    width: 1px; height: 0%;
+                    background: lightgoldenrodyellow;
+                    position: absolute;
+                    bottom:0; left: 0;
+                    z-index: 2;
+                    transition: none;
+                }
 
                 &::before{
                     content:'';
