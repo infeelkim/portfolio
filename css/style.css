@@ -741,16 +741,16 @@ a {
   font-size: 70px;
   z-index: 2;
 }
-.player .inner aside {
+.player .inner figure {
   width: 100%;
   height: 0;
 }
-.player .inner aside img:first-child {
+.player .inner figure img:first-child {
   position: absolute;
   top: 0px;
   left: -75%;
 }
-.player .inner aside img:last-child {
+.player .inner figure img:last-child {
   position: absolute;
   top: 40px;
   right: -45%;
@@ -826,7 +826,7 @@ a {
   .player .inner {
     position: relative;
   }
-  .player .inner aside {
+  .player .inner figure {
     display: none;
   }
   .player .inner ul li {
